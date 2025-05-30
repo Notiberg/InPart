@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вакансии</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/orders.css">
+</head>
+<body>
+    <div id="vacancies-page">
+        <div class="vacancies-diagonal"></div>
+        <div class="container">
+            <div class="vacancies-header">
+                <button class="back-button">←</button>
+                <h1>Вакансии</h1>
+                <button class="filter-btn" onclick="toggleFilters()">Фильтры</button>
+            </div>
+
+            <div class="search-container">
+                <input
+                    type="text"
+                    class="search-input"
+                    placeholder="Поиск по названию вакансии..."
+                    oninput="handleSearch(this.value)"
+                />
+            </div>
+
+            <div class="filters-container" id="filters-container">
+                <div class="filter-group">
+                    <h3>Категория</h3>
+                    <div class="filter-options">
+                        <label class="filter-option active">
+                            <input type="checkbox" name="all" checked>
+                            Все
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="developer">
+                            Разработчик
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="technologist">
+                            Технолог
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="designer">
+                            Дизайнер
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <button class="apply-filters-btn" onclick="applyFilters()">Применить</button>
+            </div>
+
+            <div class="vacancies-list" id="vacancies-list">
+                <div class="loading">Загрузка...</div>
+            </div>
+        </div>
+
+        <!-- Нижняя навигация -->
+         <div class="nav-container">
+            <nav class="nav-bar">
+                <a href="index.html" class="nav-item active">
+                    <span class="nav-icon">🖨️</span>
+                    <span>Главная</span>
+                </a>
+                <a href="search.html" class="nav-item">
+                    <span class="nav-icon">🔍</span>
+                    <span>Тесты</span>
+                </a>
+                <a href="orders.html" class="nav-item">
+                    <span class="nav-icon">📋</span>
+                    <span>Вакансии</span>
+                </a>
+                <a href="profile.html" class="nav-item">
+                    <span class="nav-icon">👤</span>
+                    <span>Профиль</span>
+                </a>
+            </nav>
+            
+        </div>
+        <div class="vacancies-list" id="vacancies-list"></div>
+        </div>
+
+    <script src="js/orders.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

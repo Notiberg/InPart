@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИнПарт</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="login-page">
+        <header class="header">
+            <h1 class="logo">ИнПарт</h1>
+        </header>
+
+        <section class="login-section">
+            <h2 class="section-title">Вход</h2>
+            <div class="login-container">
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Электронная почта" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Пароль" required>
+                </div>
+                <div class="button-group">
+                    <button onclick="window.location.href='index.html'" class="login-btn">Войти</button>
+                    <button class="register-btn" id="open-register-modal">Регистрация</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal" id="registerModal">
+            <div class="modal-content">
+                <button class="modal-close" id="close-register-modal">×</button>
+                <div class="modal-body">
+                    <h3>Регистрация</h3>
+                    <div class="input-group">
+                        <input type="text" id="reg-name" placeholder="Имя" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="reg-email" placeholder="Электронная почта" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="reg-password" placeholder="Пароль" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="reg-confirm-password" placeholder="Подтвердите пароль" required>
+                    </div>
+                    <button class="submit-btn">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="journey-section">
+            <div class="progress-bar">
+                <svg class="progress-line"></svg>
+            </div>
+            <div class="journey-steps">
+                <div class="journey-step">
+                    <h3>1. Заполните анкету</h3>
+                    <p>Укажите личную информацию для создания профиля.</p>
+                </div>
+                <div class="journey-step">
+                    <h3>2. Выберите направление</h3>
+                    <p>Определите сферу деятельности для поиска вакансий.</p>
+                </div>
+                <div class="journey-step">
+                    <h3>3. Пройдите тестирование</h3>
+                    <p>Оцените свои навыки по выбранному направлению.</p>
+                </div>
+                <div class="journey-step">
+                    <h3>4. Подберите компании</h3>
+                    <p>Добавляйте интересующие вакансии в избранное (❤️).</p>
+                </div>
+                <div class="journey-step">
+                    <h3>5. Тестирование на вакансию</h3>
+                    <p>Пройдите тест, чтобы подтвердить квалификацию.</p>
+                </div>
+                <div class="journey-step">
+                    <h3>6. Получите оценку</h3>
+                    <p>Эксперты оценят ваш уровень и откроют подачу резюме.</p>
+                </div>
+                <div class="journey-step">
+                    <h3>7. Ожидайте ответа</h3>
+                    <p>Компания свяжется с вами для следующего этапа.</p>
+                </div>
+                <div class="journey-step">
+                    <h3>8. Работайте и растите</h3>
+                    <p>Развивайтесь в любимой сфере и компании!</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

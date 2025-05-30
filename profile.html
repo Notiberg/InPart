@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <button id="theme-toggle">Сменить тему</button>
+    <link rel="stylesheet" href="css/profile.css">
+    <div id="profile-page">
+        <div class="container">
+            <!-- Шапка профиля -->
+            <div class="profile-header">
+                <button id="back-btn" class="back-button">←</button>
+                <div class="profile-avatar">ИК</div>
+                <div class="profile-info-card">
+                    <div class="profile-info-header">
+                        <h1 class="profile-name">Иван Козлов</h1>
+                      <button class="edit-profile" aria-label="Редактировать профиль">✏️</button>
+                    </div>
+                    <div class="progress-section">
+                        <span class="progress-label">Прогресс обучения</span>
+                        <div id="learning-progress-bar" class="progress-bar">
+                            <div class="learning-fill"></div>
+                            <span class="learning-value">0%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Статистика -->
+            <div class="profile-section">
+                <div class="stats-grid">
+                    <div class="stat-card" data-type="tests">
+                        <div class="stat-value">27</div>
+                        <div class="stat-label">Тестов</div>
+                    </div>
+                    <div class="stat-card" data-type="rating">
+                        <div class="stat-value">4.8</div>
+                        <div class="stat-label">Оценка</div>
+                    </div>
+                    <div class="stat-card" data-type="books">
+                        <div class="stat-value">12</div>
+                        <div class="stat-label">Книг</div>
+                    </div>
+                    <div class="stat-card" data-type="feedback">
+                        <div class="stat-value">5</div>
+                        <div class="stat-label">Откликов</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- История тестов -->
+            <div class="profile-section">
+                <div class="section-header">
+                    <h2 class="section-title">История прохождения тестов</h2>
+                    <a href="#" class="section-action">Все тесты</a>
+                </div>
+                <div class="order-card">
+                    <div class="order-image">
+                        <span class="order-icon">🖨️</span>
+                    </div>
+                    <div class="order-info">
+                        <div class="order-title">Технология флексографской печати</div>
+                        <div class="order-date">15 мая 2023</div>
+                        <span class="order-status">Завершен</span>
+                    </div>
+                </div>
+                <div class="order-card">
+                    <div class="order-image">
+                        <span class="order-icon">🖨️</span>
+                    </div>
+                    <div class="order-info">
+                        <div class="order-title">Контроль качества</div>
+                        <div class="order-date">10 мая 2023</div>
+                        <span class="order-status">Завершен</span>
+                    </div>
+                </div>
+                <div class="order-card">
+                    <div class="order-image">
+                        <span class="order-icon">🖨️</span>
+                    </div>
+                    <div class="order-info">
+                        <div class="order-title">Послепечатная обработка</div>
+                        <div class="order-date">5 мая 2023</div>
+                        <span class="order-status">В процессе</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Обновлённый блок резюме -->
+            <div class="profile-section" id="resume-form">
+                <div class="success-bar">
+                    <div id="resume-progress-bar" class="progress-bar">
+                        <div class="resume-fill"></div>
+                        <span class="resume-value">0%</span>
+                    </div>
+
+                </div>
+                <div class="resume-tabs">
+                    <button class="resume-tab" data-section="personal-info">Личная информация</button>
+                    <button class="resume-tab" data-section="education">Образование</button>
+                    <button class="resume-tab" data-section="work-experience">Опыт работы</button>
+                    <button class="resume-tab" data-section="skills">Навыки</button>
+                </div>
+                <div class="resume-content">
+                    <div class="resume-section" id="personal-info">
+                        <h2>Личная информация</h2>
+                        <label>Имя:</label>
+                        <input type="text" id="name" name="name" value="Иван Козлов">
+                        <label>Электронная почта:</label>
+                        <input type="email" id="email" name="email" value="ivan.kozlov@example.com">
+                        <label>Телефон:</label>
+                        <input type="tel" id="phone" name="phone">
+                        <label>Адрес:</label>
+                        <input type="text" id="address" name="address">
+                    </div>
+                    <div class="resume-section" id="education">
+                        <h2>Образование</h2>
+                        <div class="education-entries">
+                            <div class="education-entry">
+                                <label>Учебное заведение:</label>
+                                <input type="text" name="school">
+                                <label>Степень:</label>
+                                <input type="text" name="degree">
+                                <label>Специальность:</label>
+                                <input type="text" name="field">
+                                <label>Год окончания:</label>
+                                <input type="text" name="grad-year">
+                            </div>
+                        </div>
+                        <button class="add-education">Добавить еще образование</button>
+                    </div>
+                    <div class="resume-section" id="work-experience">
+                        <h2>Опыт работы</h2>
+                        <div class="work-experience-entries">
+                            <div class="work-experience-entry">
+                                <label>Компания:</label>
+                                <input type="text" name="company">
+                                <label>Должность:</label>
+                                <input type="text" name="position">
+                                <label>Дата начала:</label>
+                                <input type="text" name="start-date">
+                                <label>Дата окончания:</label>
+                                <input type="text" name="end-date">
+                                <label>Описание:</label>
+                                <textarea name="description"></textarea>
+                            </div>
+                        </div>
+                        <button class="add-work">Добавить еще работу</button>
+                    </div>
+                    <div class="resume-section" id="skills">
+                        <h2>Навыки</h2>
+                        <label>Перечислите ваши навыки:</label>
+                        <textarea id="skills" name="skills"></textarea>
+                    </div>
+                </div>
+                <button id="generate-resume">Сформировать резюме</button>
+                <div id="resume-output"></div>
+            </div>
+
+            <!-- Настройки -->
+            <div class="profile-section">
+                <div class="section-header">
+                    <h2 class="section-title">Настройки</h2>
+                </div>
+                <div class="settings-item">
+                    <div class="settings-info">
+                        <div class="settings-icon">🔔</div>
+                        <div class="settings-name">Уведомления</div>
+                    </div>
+                    <div class="settings-value">Включены</div>
+                </div>
+                <div class="settings-item">
+                    <div class="settings-info">
+                        <div class="settings-icon">❓</div>
+                        <div class="settings-name">Помощь</div>
+                    </div>
+                </div>
+                <div class="settings-item">
+                    <div class="settings-info">
+                        <div class="settings-icon">🚪</div>
+                        <div class="settings-name">Выйти</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Нижняя навигация -->
+    <div class="nav-container">
+        <nav class="nav-bar">
+            <a href="index.html" class="nav-item active">
+                <span class="nav-icon">🖨️</span>
+                <span>Главная</span>
+            </a>
+            <a href="search.html" class="nav-item">
+                <span class="nav-icon">🔍</span>
+                <span>Тесты</span>
+            </a>
+            <a href="orders.html" class="nav-item">
+                <span class="nav-icon">📋</span>
+                <span>Вакансии</span>
+            </a>
+            <a href="profile.html" class="nav-item">
+                <span class="nav-icon">👤</span>
+                <span>Профиль</span>
+            </a>
+        </nav>
+    </div>
+
+    <div id="stat-modal" class="stat-modal">
+        <div class="stat-modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <h2 class="modal-title">Детали</h2>
+                <p class="modal-description">Информация</p>
+             </div>
+        </div>
+    </div>
+
+    <script src="js/profile.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

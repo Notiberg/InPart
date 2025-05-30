@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИнПарт</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <div id="home-page">
+        <header class="header">
+            <div class="logo">ИнПарт</div>
+        </header>
+
+        <section class="profile-section">
+            <div class="profile-container">
+                <div class="profile-top">
+                    <div class="profile-left">
+                        <div class="profile-avatar">ИК</div>
+                    </div>
+                    <div class="profile-stats">
+                        <div class="stat-container">
+                            <div class="profile-stat">
+                                <span class="stat-value">4.8</span>
+                                <span class="stat-label">Средняя оценка</span>
+                            </div>
+                        </div>
+                        <div class="stat-container histogram">
+                            <div class="profile-stat">
+                                <span class="total-responses">12</span>
+                                <span class="stat-label">Откликов за неделю</span>
+                                <svg class="histogram-svg" width="100%" height="60">
+                                    <!-- Histogram bars will be generated via JS -->
+                                    <g class="histogram-bars"></g>
+                                    <g class="histogram-labels">
+                                        <text x="0" y="70" font-size="12">Пн</text>
+                                        <text x="20" y="70" font-size="12">Вт</text>
+                                        <text x="40" y="70" font-size="12">Ср</text>
+                                        <text x="60" y="70" font-size="12">Чт</text>
+                                        <text x="80" y="70" font-size="12">Пт</text>
+                                        <text x="100" y="70" font-size="12">Сб</text>
+                                        <text x="120" y="70" font-size="12">Вс</text>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-bottom">
+                    <div class="profile-name">Иван Кузнецов</div>
+                    <div class="progress-container">
+                        <span class="progress-text">75%</span>
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="tab-buttons">
+            <button class="tab-btn active" data-tab="news">Новое в отрасли</button>
+            <button class="tab-btn" data-tab="articles">Статьи</button>
+            <button class="tab-btn" data-tab="companies">Компании</button>
+        </div>
+
+        <div class="tab-content active" id="news">
+            <h2 class="section-title">Новое в отрасли</h2>
+            <div class="news-container">
+                <div class="news-card">
+                    <img src="https://via.placeholder.com/300x150?text=3D+Printing" alt="3D Printing">
+                    <h3>Инновации в 3D-печати</h3>
+                    <p>Новые материалы для 3D-печати открывают горизонты для промышленности.</p>
+                </div>
+                <div class="news-card">
+                    <img src="https://via.placeholder.com/300x150?text=Robotics" alt="Robotics">
+                    <h3>Робототехника в 2025</h3>
+                    <p>Как роботы меняют производственные процессы в России.</p>
+                </div>
+                <div class="news-card">
+                    <img src="https://via.placeholder.com/300x150?text=AI" alt="AI">
+                    <h3>ИИ на службе инженеров</h3>
+                    <p>Искусственный интеллект оптимизирует проектирование.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="articles">
+            <h2 class="section-title">Статьи</h2>
+            <div class="articles-container">
+                <div class="article-card">
+                    <img src="https://via.placeholder.com/300x200?text=3D+Printer+Guide" alt="3D Printer Guide">
+                    <h3>Как выбрать 3D-принтер</h3>
+                    <p>Полное руководство по выбору оборудования для ваших задач.</p>
+                    <div class="article-date">29 мая 2025</div>
+                </div>
+                <div class="article-card">
+                    <img src="https://via.placeholder.com/300x200?text=Additive+Tech" alt="Additive Tech">
+                    <h3>Будущее аддитивных технологий</h3>
+                    <p>Тенденции и прогнозы на 2030 год.</p>
+                    <div class="article-date">28 мая 2025</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="companies">
+            <h2 class="section-title">Компании</h2>
+            <div class="companies-container">
+                <div class="company-card">
+                    <div class="company-logo">3DP</div>
+                    <div class="company-info">
+                        <h3>3DPrintPro</h3>
+                        <p>Ведущий производитель 3D-принтеров в России.</p>
+                    </div>
+                </div>
+                <div class="company-card">
+                    <div class="company-logo">FP</div>
+                    <div class="company-info">
+                        <h3>FastPrint Studio</h3>
+                        <p>Услуги быстрой печати и прототипирования.</p>
+                    </div>
+                </div>
+                <div class="company-card">
+                    <div class="company-logo">TL</div>
+                    <div class="company-info">
+                        <h3>TechFab Lab</h3>
+                        <p>Инновационные решения для промышленности.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <div class="modal-body">
+                    <h3>Всплывающее окно</h3>
+                    <p>Контент всплывающего окна.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-- Нижняя навигация -->
+    <div class="nav-container">
+        <nav class="nav-bar">
+            <a href="index.html" class="nav-item active">
+                <span class="nav-icon">🖨️</span>
+                <span>Главная</span>
+            </a>
+            <a href="search.html" class="nav-item">
+                <span class="nav-icon">🔍</span>
+                <span>Тесты</span>
+            </a>
+            <a href="orders.html" class="nav-item">
+                <span class="nav-icon">📋</span>
+                <span>Вакансии</span>
+            </a>
+            <a href="profile.html" class="nav-item">
+                <span class="nav-icon">👤</span>
+                <span>Профиль</span>
+            </a>
+        </nav>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
