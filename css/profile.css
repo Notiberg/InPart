@@ -94,9 +94,9 @@ body {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary-color), #5e5ce6);
-    display: flex;
-    align-items: center;
+    background-image: url(https://i01.fotocdn.net/s219/a46f8bdd59267b34/user_m/2993417545.jpg);
+    background-size: contain;
+    align-items: end;
     justify-content: center;
     color: white;
     font-size: 72px;
