@@ -1,31 +1,31 @@
 // Ваш оригинальный код (без изменений)
 const vacanciesMock = [
     {
-        id: "VAC-2025-001",
+        id: "IT",
         title: "Ведущий разработчик React",
         date: "20 мая 2025",
         salary: "250 000 ₽",
         category: "Разработчик",
         status: "Открыта",
-        image: "https://via.placeholder.com/80",
+        image: "https://www.meme-arsenal.com/memes/160a3c3bda4230a1d3c4e89c30089205.jpg",
     },
     {
-        id: "VAC-2025-002",
+        id: "Полиграфия",
         title: "Технолог производства",
         date: "18 мая 2025",
         salary: "180 000 ₽",
         category: "Технолог",
         status: "Открыта",
-        image: "https://via.placeholder.com/80",
+        image: "https://sun9-64.userapi.com/impg/fcjMZ4m01f1SqDgD_L-BT7Lv1cDOckARKW1C_w/-lQGsYJlzXM.jpg?size=1280x960&quality=96&sign=2cab913101d98d0060f988440669da9e&c_uniq_tag=M-W2AB4tj7j1dU0JCBkTJgC7NeT2Tw1q3qrUOsmYozU&type=album",
     },
     {
-        id: "VAC-2025-003",
-        title: "UI/UX Дизайнер",
+        id: "Машиностроение",
+        title: "Материаловед",
         date: "15 мая 2025",
         salary: "200 000 ₽",
-        category: "Дизайнер",
+        category: "Инженер",
         status: "Закрыта",
-        image: "https://via.placeholder.com/80",
+        image: "https://tvoe-avto.com/wp-content/uploads/posts/2014-01/1389249279_1.jpg",
     },
 ];
 
