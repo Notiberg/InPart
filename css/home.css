@@ -64,12 +64,18 @@ body {
 
 /* Блок личного кабинета */
 .profile-section {
+    align-self: center;
     background-color: var(--surface-color);
     border-radius: 16px;
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: var(--card-shadow);
     border: 0.5px solid rgba(255, 255, 255, 0.2);
+    max-width: 800px;
+    display: grid;
+    gap: 16px;
+    max-width: 800px;
+    margin: 0 auto 20px;
 }
 
 .profile-container {
@@ -92,12 +98,14 @@ body {
 }
 
 .profile-avatar {
-    width: 80px;
-    height: 80px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     background: linear-gradient(135deg, var(--primary-color), #5e5ce6);
+    background-image: url(https://i01.fotocdn.net/s219/a46f8bdd59267b34/user_m/2993417545.jpg);
+    background-size: contain;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     color: white;
     font-weight: 600;
@@ -125,10 +133,31 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 110px;
+}
+
+.profile-stater {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 109px;
+}
+
+.stater-value {
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-top: 20px;
+}
+
+.stater-label {
+    font-size: 14px;
+    color: var(--text-secondary-color);
+    overflow-wrap: break-word;
 }
 
 .stat-value {
-    font-size: 24px;
+    font-size: 34px;
     font-weight: 700;
     color: var(--primary-color);
 }
@@ -137,6 +166,7 @@ body {
     font-size: 14px;
     color: var(--text-secondary-color);
     overflow-wrap: break-word;
+    margin-bottom: 10px;
 }
 
 .total-responses {
@@ -268,6 +298,7 @@ body {
     font-weight: 600;
     color: var(--primary-color);
     margin-bottom: 16px;
+    margin-left: 40px;
     overflow-wrap: break-word;
 }
 
@@ -391,7 +422,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: var(--progress-light);
+    /* background: var(--progress-light); */
     display: flex;
     align-items: center;
     justify-content: center;
