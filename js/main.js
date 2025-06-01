@@ -13,5 +13,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
